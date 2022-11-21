@@ -1,0 +1,9 @@
+Assignment 3: STL HashMap (short answer questions)
+Names:
+1. we must overload at()
+because operatopr[] call insert() method and it can't be const
+2. m.find(k) is faster than std::find(m.begin(), m.end(), k)
+because we call the find_node() method, and use "size_t index = _hash_function(key) % bucket_count()" in find_node(), but std::find is O(n)
+3. initialize the variable when creating the object(by constructor), and free memory when the object out of scope(by destructor)
+4. prefix operator++: check the end(), and if reaching the end of bucket, find the next bucket
+postfix operator++: return the copy, and it does't need check end()
