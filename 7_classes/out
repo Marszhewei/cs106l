@@ -1,0 +1,32 @@
+**** Create an empty strvector.
+Is empty? true
+my vector: {  }
+strvector length: 0
+
+**** Test push_back() and insert().
+Is empty? false
+{  jack  }
+strvector length: 1
+Is empty? false
+{  jack  fet  }
+strvector length: 2
+Is empty? false
+{  jack  fet  mars  }
+strvector length: 3
+Is empty? false
+{  jack  john  fet  mars  }
+strvector length: 4
+
+**** Test pop_back() and remove().
+pop back elems: mars
+strvector length: 3
+remove idx: 1 is : john
+strvector length: 2
+{  jack  fet  }
+
+**** Test clear the whole strvector.
+{  }
+Is empty? true
+
+**** Test operator[] and constructor.
+{  hello  hello  hello  }
